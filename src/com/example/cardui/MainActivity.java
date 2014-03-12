@@ -3,11 +3,13 @@ package com.example.cardui;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 
 public class MainActivity extends Activity {
 
+	
+	RelativeLayout layout;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -17,6 +19,7 @@ public class MainActivity extends Activity {
 		cardadapter adapter = new cardadapter(this, R.layout.list_item, new String[]{"123","456","123","456","123","456","123","456","123","456","123","456","123","456","123","456"});
 		listView.setAdapter(adapter);
 	}
+	
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
